@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+    <title>MeasRin Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 4rem 1rem; /* Add more padding to the top for small screens */
+                text-align: center;
+            }
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .hero-content p,
+            .hero-content ul {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navigation -->
+    <div id="home" class="w-full bg-cover bg-center" style="background-image: url('photo/back.png');">
+        <!-- Desktop Navigation -->
+        <header class="hidden md:flex justify-center bg-white bg-opacity-20 backdrop-blur-md fixed top-0 left-0 right-0 shadow-md z-10">
+            <div class="container flex justify-between p-5">
+                <div class="text-4xl font-bold bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
+                    Welcome to <span class="underline font-serif">MeasRin</span>
+                </div>
+                <ul class="flex items-center gap-5 text-xl font-serif font-bold">
+                    <li class="text-gray-800 hover:text-blue-600"><a href="#skills">Skill</a></li>
+                    <li class="text-gray-800 hover:text-blue-600"><a href="#about">About Me</a></li>
+                    <li class="w-[1px] h-6 bg-gray-700"></li>
+                    <li class="text-gray-800 hover:text-blue-600"><a href="#home">Home</a></li>
+                    <li class="text-white hover:bg-blue-600 bg-blue-700 py-2 px-4 rounded-lg font-serif"><a href="https://t.me/MeasRin71">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+    
+        <!-- Mobile Navigation -->
+        <header class="md:hidden fixed top-0 left-0 right-0 shadow-md bg-white bg-opacity-20 backdrop-blur-md z-10">
+            <div class="container flex justify-between p-3">
+                <div class="text-3xl font-bold py-1.5 bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent font-serif">
+                    Welcome
+                </div>
+                <div class="text-3xl my-2" id="toggle"><i class="fas fa-bars"></i></div>
+            </div>
+        </header>
+    
+        <!-- Sidebar Menu -->
+        <div class="side-bar-menu md:hidden fixed top-0 left-0 h-full w-60 bg-white bg-opacity-20 backdrop-blur-md shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-10">
+            <h1 class="block py-5 text-3xl font-bold font-serif text-center bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">Welcome</h1>
+            <ul class="mt-20 space-y-4 text-center">
+                <li><a href="#skill" class="block py-2 text-lg font-bold text-gray-800 hover:text-blue-600 hover:bg-gray-300">Skill</a></li>
+                <li><a href="#about" class="block py-2 text-lg font-bold text-gray-800 hover:text-blue-600 hover:bg-gray-300">About Me</a></li>
+                <li><a href="#home" class="block py-2 text-lg font-bold text-gray-800 hover:text-blue-600 hover:bg-gray-300">Home</a></li>
+                <li><a href="https://t.me/MeasRin71" class="text-white hover:bg-blue-600 bg-blue-700 py-2 px-4 rounded-lg font-serif">Contact</a></li>
+            </ul>
+        </div>
+    
+        <!-- Hero Section -->
+        <section id="hero" class="flex flex-col items-center justify-center min-h-screen text-white pt-20 md:pt-0">
+            <div class="flex flex-col md:flex-row items-center justify-center w-full">
+                <div class="md:w-1/2 flex flex-col justify-center items-center p-10 space-y-3 hero-content">
+                    <h1 class="text-5xl font-bold mb-2">Hello, I'm MeasRin</h1>
+                    <p class="text-xl">I'm a web developer with a passion for creating beautiful and functional websites.</p>
+                    <p class="text-lg">Currently studying IT at the Royal University of Phnom Penh.</p>
+                    <p class="text-lg">Year 2 Student</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center items-center p-5">
+                    <img src="photo/rin.jpg" alt="MeasRin" class="rounded-full w-80 h-80 object-cover shadow-lg">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Skills Section -->
+         <section id="skills" class="py-16 bg-gray-200">
+             <div class="container mx-auto text-center">
+                 <h2 class="text-4xl font-bold mb-8">Skills</h2>
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <div class="bg-white p-6 rounded-lg shadow-lg">
+                         <i class="fab fa-python text-4xl text-blue-500 mb-4"></i>
+                         <h3 class="text-2xl font-semibold">Python</h3>
+                         <p class="text-gray-700">Basic knowledge of Python programming.</p>
+                         <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                             <div class="bg-blue-500 h-2.5 rounded-full" style="width: 25%"></div>
+                         </div>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg">
+                         <i class="fab fa-js text-4xl text-yellow-500 mb-4"></i>
+                         <h3 class="text-2xl font-semibold">JavaScript</h3>
+                         <p class="text-gray-700">Basic knowledge of JavaScript programming.</p>
+                         <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                             <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 25%"></div>
+                         </div>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg">
+                         <i class="fab fa-css3-alt text-4xl text-blue-600 mb-4"></i>
+                         <h3 class="text-2xl font-semibold">CSS</h3>
+                         <p class="text-gray-700">Basic knowledge of CSS styling.</p>
+                         <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                             <div class="bg-blue-600 h-2.5 rounded-full" style="width: 25%"></div>
+                         </div>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg">
+                         <i class="fab fa-html5 text-4xl text-red-600 mb-4"></i>
+                         <h3 class="text-2xl font-semibold">HTML</h3>
+                         <p class="text-gray-700">Basic knowledge of HTML markup.</p>
+                         <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                             <div class="bg-red-600 h-2.5 rounded-full" style="width: 25%"></div>
+                         </div>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg">
+                         <i class="fab fa-tumblr text-4xl text-blue-600 mb-4"></i>
+                         <h3 class="text-2xl font-semibold">TailwindCSS</h3>
+                         <p class="text-gray-700">Basic knowledge of TailwindCSS framework.</p>
+                         <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                             <div class="bg-blue-600 h-2.5 rounded-full" style="width: 25%"></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     
+         <!-- Projects Section -->
+         <section id="projects" class="py-16 bg-white">
+             <div class="container mx-auto text-center">
+                 <h2 class="text-4xl font-bold mb-8">Projects</h2>
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <!-- Add project cards here -->
+                     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+                         <img src="project1.jpg" alt="Project 1" class="w-full h-40 object-cover rounded-md mb-4">
+                         <h3 class="text-2xl font-semibold mb-2">Project One</h3>
+                         <p class="text-gray-700 mb-4">A brief description of the project goes here.</p>
+                         <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                     </div>
+                     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+                         <img src="project2.jpg" alt="Project 2" class="w-full h-40 object-cover rounded-md mb-4">
+                         <h3 class="text-2xl font-semibold mb-2">Project Two</h3>
+                         <p class="text-gray-700 mb-4">A brief description of the project goes here.</p>
+                         <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                     </div>
+                     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+                         <img src="project3.jpg" alt="Project 3" class="w-full h-40 object-cover rounded-md mb-4">
+                         <h3 class="text-2xl font-semibold mb-2">Project Three</h3>
+                         <p class="text-gray-700 mb-4">A brief description of the project goes here.</p>
+                         <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     
+         <!-- Contact Section -->
+         <section id="contact" class="py-16 bg-gray-200">
+             <div class="container mx-auto text-center">
+                 <h2 class="text-4xl font-bold mb-8">Contact Me</h2>
+                 <form action="#" method="POST" class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+                     <div class="mb-4">
+                         <label for="name" class="block text-gray-700">Name</label>
+                         <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                     </div>
+                     <div class="mb-4">
+                         <label for="email" class="block text-gray-700">Email</label>
+                         <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                     </div>
+                     <div class="mb-4">
+                         <label for="message" class="block text-gray-700">Message</label>
+                         <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                     </div>
+                     <div class="text-center">
+                         <button type="submit" class="px-6 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Send Message</button>
+                     </div>
+                 </form>
+             </div>
+         </section>
+     </main>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-900 bg-opacity-80 text-center">
+        <p class="text-gray-400">&copy; 2024 MeasRin. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('toggle').addEventListener('click', function () {
+            var sideBarMenu = document.querySelector('.side-bar-menu');
+            if (sideBarMenu.classList.contains('-translate-x-full')) {
+                sideBarMenu.classList.remove('-translate-x-full');
+                sideBarMenu.classList.add('translate-x-0');
+            } else {
+                sideBarMenu.classList.remove('translate-x-0');
+                sideBarMenu.classList.add('-translate-x-full');
+            }
+        });
+    </script>
+</body>
+
+</html>
